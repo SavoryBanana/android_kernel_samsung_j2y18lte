@@ -78,6 +78,8 @@ obj-$(CONFIG_COMPAT) += mdss_compat_utils.o
 
 # Samsung lcd common driver
 obj-$(CONFIG_FB_MSM_MDSS_SAMSUNG) += samsung/
+obj-$(CONFIG_FB_MSM_MDSS_KCAL_CTRL) += mdss_mdp_kcal_ctrl.o
 
 # LiveDisplay
 obj-$(CONFIG_FB_MSM_MDSS) += mdss_livedisplay.o
+
