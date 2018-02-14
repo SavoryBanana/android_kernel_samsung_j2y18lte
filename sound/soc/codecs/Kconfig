@@ -904,4 +904,10 @@ config SND_SOC_TFA9896
 	help
 	TFA9896 driver
 
+config SOUND_CONTROL_HAX_3_GPL
+	tristate "new wcd93xx sound control hax"
+	default y
+	help
+	  FauxSound WCD93xx chipset sound control hacks 3.0 for deeper hax
+
 endmenu
