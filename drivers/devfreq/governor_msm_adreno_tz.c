@@ -399,9 +399,9 @@ static int tz_get_target_freq(struct devfreq *devfreq, unsigned long *freq,
 	if (stats.private_data)
 		context_count =  *((int *)stats.private_data);
 
-	/* Update the GPU load statistics */
-	compute_work_load(&stats, priv, devfreq);
-	/*
+ 	/* Update the GPU load statistics */
+ 	compute_work_load(&stats, priv, devfreq);
+ 	/*
 	 * Do not waste CPU cycles running this algorithm if
 	 * the GPU just started, or if less than FLOOR time
 	 * has passed since the last run or the gpu hasn't been
