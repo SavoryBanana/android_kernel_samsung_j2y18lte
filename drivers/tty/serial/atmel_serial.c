@@ -1886,7 +1886,6 @@ static void atmel_flush_buffer(struct uart_port *port)
 	 * been cleared, so we have to reset tx_len accordingly.
 	 */
 	sg_dma_len(&atmel_port->sg_tx) = 0;
->>>>>>> de3596d... tty/serial: atmel: fix race condition (TX+DMA)
 }
 
 /*
