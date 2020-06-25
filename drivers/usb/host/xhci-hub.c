@@ -295,11 +295,10 @@ static int xhci_stop_device(struct xhci_hcd *xhci, int slot_id, int suspend)
 				spin_unlock_irqrestore(&xhci->lock, flags);
 				xhci_free_command(xhci, cmd);
 				return -ENOMEM;
-
 			}
 
 			ret = xhci_queue_stop_endpoint(xhci, command, slot_id,
-					i, suspend);
+						       i, suspend);
 			if (ret) {
 				spin_unlock_irqrestore(&xhci->lock, flags);
 				goto err_cmd_queue;
